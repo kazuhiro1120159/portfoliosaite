@@ -1,0 +1,532 @@
+/*----------------------------------------------
+
+共通CSS
+
+
+----------------------------*/
+body{
+    font-family: "selif",sans-serif;
+    margin: 0;
+    display: block;
+}
+.container{
+    max-width:100%;
+    margin: 0 auto;
+    display: block;
+    padding: 0% ;
+}
+.text{
+    font-family: sans-serif;
+    padding: 15px;
+}
+.title{
+    text-align: center;
+    margin-bottom: 60px;
+}
+img{
+    vertical-align: middle;
+}
+h2{
+    font-family: "Segoe UI";
+    font-size: 40px;
+}
+h3{
+    font-family: "Segoe UI";
+}
+#wrapper{
+    width: 100%;
+    overflow: hidden;
+}
+/*----------------------------------------------
+
+header
+
+
+----------------------------*/
+.header{
+    align-items: center;
+    position: relative ;
+    background-image: url(header-image.jpg);
+    height:650px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 100%;
+}
+
+.h-img{
+    margin: auto 0;
+    background-size: cover;
+    max-width: 100%;
+}
+.h-title{
+    margin:0;
+    font-size: 25px;
+    padding: 18px 10px;
+    position: absolute;
+    top: 43%;
+    left: 40%;
+}
+.header-menu{
+    opacity: 0.8;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+}
+.h-menu{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 20;
+    background-color:#0F1E14;
+}
+li{
+    padding: 16px;
+}
+li a{
+    color:#fff;
+    text-decoration: none;
+}
+li a:hover{
+    color:lightgray;
+    text-decoration: none;
+    transition: 0.3s;
+    border-bottom: 1px solid lightgray;
+}
+
+@media screen and (max-width: 768px){
+    .header-menu{
+        width:100%;
+    }
+    header{
+        height: 100px;
+    }
+    .h-title{
+        position: absolute;
+        top: 43%;
+        left: 25%;
+    }
+    h1{
+        padding: 16px;;
+    }
+    ul{
+        padding: 0;
+    }
+    li{
+        width: 50%;
+        border: 1px solid #d8d8d8;
+    }
+    
+    .about_area-img img{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .a-img{
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        height: auto;
+        object-fit: cover;
+    }
+    .about_area-img{
+        margin: 0 auto;
+    }
+
+}
+
+
+/*----------------------------------------------
+
+about
+
+
+----------------------------*/
+#about{
+    padding: 100px 0;
+    background-color:#fff;
+    display: block;
+    position: relative;
+    animation: anime1 2s ease-in-out;
+}
+@keyframes anime1{
+    0%{
+        opacity: 0;
+        top:50px;
+    }
+    100%{
+        opacity: 1;
+        top:0px;
+    }
+}
+.about_area{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 40px;
+    }
+    
+    .a-img{
+        width: 75%;
+        border-radius: 50%;
+    }
+.about_area-img{
+    width: 45%;
+    text-align: center;
+}
+.about_area-description-text{
+    text-align: left;
+    font-size: 16px;
+    padding: 15px;
+    line-height: 2;
+}
+.about_area-description{
+    width: 50%;
+    padding: 25px;
+}
+.fa-twitter{
+    color: #1da1f2;
+    font-size: 35px;
+    opacity: 0.8;
+}
+.fa-youtube{
+    color:#da1725;
+    font-size: 50px;
+    opacity: 0.8;
+}
+.fa-rss{
+    color: black;
+    font-size: 50px;
+    opacity: 0.8;
+}
+.fa-twitter :hover{
+    opacity: 0.6;
+}
+.fa-youtube:hover{
+    opacity: 0.6;
+}
+.fa-rss:hover{
+    opacity: 0.6;
+}
+
+.about_area-description-icon{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.profile{
+    font-family: "Segoe UI";
+    font-size: 28px;
+    text-align: center;
+    border-bottom: 2px solid #353535;
+    padding:0 5px 15px 5px;
+}
+/*----------------------------------------------
+
+service
+
+
+----------------------------*/
+#service{
+    padding: 100px 0;
+    background-color:rgba(206, 206, 206, 0.2);
+    
+    display: nblock;
+    position: relative;
+    animation: anime1 3s ease-in-out;
+}
+#contact{
+    padding: 100px 0;
+    background-color:rgba(206, 206, 206, 0.2);
+    display: block;
+    position: relative;
+    animation: anime1 4s ease-in-out;
+}
+#works{
+    padding: 140px 0;
+    background-color:#fff;
+    display: block;
+    position: relative;
+    animation: anime1 4s ease-in-out;
+}
+#service h3{
+    text-align: center;
+}
+#works h3{
+    text-align: center;
+}
+.serivice-icon{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color:rgb(65, 78, 100);
+}
+.works-icon{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.w-img{
+    max-width: 50%;
+}
+.row h3{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.row a:hover{
+    opacity: 0.8;
+}
+.coming{
+    font-size: 23px;
+    color: #333;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 768px){
+ 
+.about_area-description{
+    width: 100%;
+}
+.text{
+    font-size: 15px;
+}
+
+#works img{
+    margin-bottom: 40px;
+}
+}
+/*----------------------------------------------
+
+contact
+
+
+----------------------------*/
+
+.form{
+    width:400px;
+    margin: 0 auto 40px;
+}
+
+label{
+    display: block;
+}
+input{
+    display: block;
+    width:100%;
+    border: 1px solid #d8d8d8;
+}
+textarea{
+    display: block;
+    width:100%;
+    border: 1px solid #d8d8d8;
+}
+.form-content{
+    margin-bottom: 15px;
+}
+button{
+    background-color: #0F1E14;
+    color:#fff;
+    width:150px;
+    padding: 10px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+    opacity: 0.9;
+}
+
+
+
+
+
+
+footer{
+    text-align: center;
+    background-color:#0F1E14;
+    padding: 20px;
+    color:#fff;
+}
+
+.portfolio_box {
+    width: calc(100% / 3);
+    height: 300px;
+    display: block;
+    position: relative;
+    text-decoration: none;
+}
+.portfolio_content a{
+    text-decoration: none;
+}
+.portfolio_content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.porfolio_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+.content-p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 20px;
+    opacity: 1;
+    background: rgba(72, 72, 72, 0.555);
+    line-height: 300px;
+}
+.content-p :hover{
+    background-color: #d8d8d8;
+}
+@media screen and (max-width: 768px){
+    
+    .form{
+        width: 100%;
+    }
+    .form-content{
+        margin: 30px;
+    }
+    .portfolio_box{
+    width:100%;
+    margin: 0 ;
+}
+
+.portfolio_content {
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+    }
+    @media screen and (max-width: 480px){
+    
+        .portfolio_box {
+            width:100%;
+            margin: 0 ;
+    }
+        
+        }
+
+        @media screen and (max-width: 768px){
+/*nav*/
+nav.globalMenuSp {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color:rgba(206, 206, 206, 0.2);
+    color: #000;
+    text-align: center;
+    transform: translateY(-100%);
+    transition: all 0.6s;
+    width: 100%;
+}
+ 
+nav.globalMenuSp ul {
+    background-color:rgba(206, 206, 206, 0.8);
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+}
+ 
+nav.globalMenuSp ul li {
+    font-size: 1.1em;
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    border-bottom: 1px dotted #333;
+}
+ 
+/* 最後はラインを描かない */
+nav.globalMenuSp ul li:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+ 
+nav.globalMenuSp ul li a {
+    display: block;
+    color: #0F1E14;
+    padding: 1en 0;
+    font-family: "selif",sans-serif;
+    font-weight: 500;
+}
+ 
+/* このクラスを、jQueryで付与・削除する */
+nav.globalMenuSp.active {
+    transform: translateY(0%);
+}
+
+.navToggle {
+    display: block;
+    position: fixed;    /* bodyに対しての絶対位置指定 */
+    right: 13px;
+    top: 12px;
+    width: 43px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 3;
+    text-align: center;
+}
+ 
+.navToggle span {
+    display: block;
+    position: absolute;    /* .navToggleに対して */
+    width: 30px;
+    border-bottom: solid 3px #0F1E14;
+    -webkit-transition: .35s ease-in-out;
+    -moz-transition: .35s ease-in-out;
+    transition: .35s ease-in-out;
+    left: 6px;
+}
+ 
+.navToggle span:nth-child(1) {
+    top: 9px;
+}
+ 
+.navToggle span:nth-child(2) {
+    top: 18px;
+}
+ 
+.navToggle span:nth-child(3) {
+    top: 27px;
+}
+ 
+.navToggle span:nth-child(4) {
+    border: none;
+    color: #eee;
+    font-size: 9px;
+    font-weight: bold;
+    top: 34px;
+}
+
+/* 最初のspanをマイナス45度に */
+.navToggle.active span:nth-child(1) {
+    top: 18px;
+    left: 6px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+ 
+/* 2番目と3番目のspanを45度に */
+.navToggle.active span:nth-child(2),
+.navToggle.active span:nth-child(3) {
+    top: 18px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+        }

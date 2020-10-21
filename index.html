@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kazuhiro Shimura</title>
+    <script src="https://sdk.form.run/js/v2/formrun.js"></script>
+    <!-- BootstrapのCSS読み込み -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="codebegin4.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js" integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg==" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script>
+        window.sr = ScrollReveal({ reset: true ,mobile: true});
+        sr.reveal( '.left', { origin: 'left' , distance: '50%', duration: 500 , scale: 1.0, delay :500 ,opacity: 0.5,});
+        sr.reveal( '.right', { origin: 'right' , distance: '50%', duration: 500 , scale: 1.0, delay :500 ,opacity: 0.5,});
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> 
+    <!--jQueryの読み込みの後に、以下のコードを追加 -->
+    <script>
+      $(function() {
+    $('.navToggle').click(function() {
+        $(this).toggleClass('active');
+ 
+        if ($(this).hasClass('active')) {
+            $('.globalMenuSp').addClass('active');
+        } else {
+            $('.globalMenuSp').removeClass('active');
+        }
+    });
+});
+    </script>
+</head>
+
+<body style="height: 100%;">
+    <div class="container" id="wrapper">
+        <header class="header">
+            <div class="h-box">
+                <h1 class="h-title">Kazuhiro's Portfolio.</h1>
+                <div class="header-menu">
+                    <nav class="h-nav globalMenuSp">
+                        <ul class="h-menu">
+                            <li class="h-list">
+                                <a href="#about">About</a>
+                            </li>
+                            <li class="h-list">
+                                <a href="#service">Service</a>
+                            </li class="h-list">
+                            <li class="h-list">
+                                <a href="#works">Works</a>
+                            </li>
+                            <li class="h-list">
+                                <a href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="navToggle">
+                        <span></span><span></span><span></span><span></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+    <main>
+            <section id="about">
+                <h2 class="title">About</h2>
+                <div class="about_area">
+                    <div class="about_area-img">
+                        <img class="a-img" src="portfolio.jpg" alt="">
+                    </div>
+                    <div class="about_area-description">
+                        <h3 class="profile">Profile</h3>
+                        <div class="about_area-description-text">
+                            志村　一太(しむら　かずひろ)<br>
+                            1997年　埼玉県出身<br><br>
+                            はじめまして、志村一太と申します。<br>
+                            現在、自らのスキルアップを図りたくWebサイト制作に
+                            取り組んでおります。<br>
+                            お客様からいただいたWebデザイン案を適切にコーディングし、Webサイトを制作いたします。<br>
+                            どうぞよろしくお願い致します。<br><br>
+                            対応スキル：HTML5,CSS3,jQuery,Bootstrap,PHP
+                        </div>
+                        <div class="about_area-description-icon">
+                            <a href="https://twitter.com/kazunokono_sato">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+            <section id="service">
+                <h2 class="title">Service</h2>
+                <div class="row">
+                    <div class="col-md-4 col-xs-12">
+                        <h3>コーディング</h3>
+                        <div class="serivice-icon">
+                        <i class="fas fa-code"></i>
+                        </div>
+                        <p class="text">お客様よりお預かりしたデザインデータを基に、適切にコーディングいたします。HTML5、構造化マークアップでのSEOに最適化したコーディングを実現いたします。</p>
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                        <h3>レスポンシブ対応</h3>
+                        <div class="serivice-icon">
+                        <i class="fas fa-pencil-ruler"></i>
+                        </div>
+                        <p class="text">モバイルファーストと言われている現在においてレスポンシブ対応は必要不可欠となっております。PC・タブレット・スマホ、どの端末でもストレスなく閲覧できるようにレスポンシブ対応いたします。</p>
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                        <h3>HP/LP作成</h3>
+                        <div class="serivice-icon">
+                        <i class="fas fa-film"></i>
+                        </div>
+                        <p class="text">「個人でホームページを持ちたい！」 「会社の概要説明や集客のためのサイトを作りたい！」 そんなお客様のご要望をヒアリングし、ご要望に沿ったランディングページを作成いたします。現在、実績作りの為ため低価格で、制作を承っております。</p>
+                    </div>
+                </div>
+            </section>
+            <section id="works">
+                <h2 class="title">Works</h2>
+                <div class="portfolio_content">
+                    <a href="#" class="portfolio_box">
+                    <img src="works-image1.png" class="porfolio_img">
+                    <p class="content-p" >簡単なHP模写</p>
+                    </a> 
+                    <a href="#" class="portfolio_box">
+                    <img src="works-image2.png" class="porfolio_img">
+                    <p class="content-p" >簡単なHP模写</p>
+                    </a>
+                    <a href="#" class="portfolio_box">
+                    <img src="works-image3.png" class="porfolio_img">
+                    <p class="content-p" >Airbnb模写</p>
+                    </a>
+                </div>
+            </section>
+            <section id="contact">
+                <h2 class="title">Contact</h2>
+                <div class="form">
+                    <!-- class, action, methodを変更しないでください -->
+                    <form class="formrun" action="https://form.run/api/v1/r/u70yfukoyn0yeztm0o0xhl70" method="post">
+                    <!-- ↓自由に要素を追加・編集することができます -->
+                    <div class="form-content">
+                        <label>お名前</label>
+                        <input name="お名前" type="text">
+                    </div>
+
+                    <div class="form-content">
+                        <label>メールアドレス [必須]</label>
+                        <input name="メールアドレス" type="text" data-formrun-type="email" data-formrun-required>
+                        <div data-formrun-show-if-error="メールアドレス">メールアドレスを正しく入力してください</div>
+                    </div>
+
+                    <div class="form-content">
+                        <label>お問い合わせ [必須]</label>
+                        <textarea rows="10" name="お問い合わせ" data-formrun-required></textarea>
+                        <div data-formrun-show-if-error="お問い合わせ">お問い合わせ入力してください</div>
+                    </div>
+
+                    <!-- ボット投稿をブロックするためのタグ -->
+                    <div class="_formrun_gotcha">
+                        <style media="screen">._formrun_gotcha {position:absolute!important;height:1px;width:1px;overflow:hidden;}</style>
+                        <label for="_formrun_gotcha">If you are a human, ignore this field</label>
+                        <input type="text" name="_formrun_gotcha" id="_formrun_gotcha" tabindex="-1">
+                    </div>
+
+                    <button type="submit" data-formrun-error-text="未入力の項目があります" data-formrun-submitting-text="送信中...">送信</button>
+                    </form>
+
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="codebegin4.js"></script>
+</body>
+<footer>
+    &copy; 2020 Kazuhiro Shimura
+</footer>
+</html>
